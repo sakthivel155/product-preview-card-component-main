@@ -1,0 +1,146 @@
+body{
+    height: 100vh;
+    margin: 0px;
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    height:100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+   
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    height:99%;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    
+
+}
+.mobile-img {
+    width: 100%;
+    height:100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.desktop-img{
+    display: none;
+   
+}
+
+.detail{
+   
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0px 0px 10px 10px;
+    padding: 22px;
+   
+}
+.Perfume{
+    margin: 0px;
+    font-size:0.6rem;
+    letter-spacing: 4px;
+    font-family:Montserrat;
+    color: hsl(228, 12%, 48%);
+}
+.Title{
+    
+    font-family:Fraunces;
+    font-size: 25px;
+    line-height: 32px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+.passage{
+    font-family: Montserrat;
+    font-size:0.7em;
+    line-height: 18px;
+    color: hsl(228, 12%, 48%); 
+    margin-top: 0px;
+}
+.price{
+    display: flex;
+    align-items: center; 
+    gap:15px;   
+}
+.currentprice{
+    display: inline;
+    margin:0px;
+    font-family: Fraunces;
+    color:hsl(158, 36%, 37%);
+}
+.Strikeout{
+    font-family:Montserrat;
+    text-decoration: line-through;
+    color:hsl(228, 12%, 48%); 
+    font-size:x-small;
+}
+button{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    width:100%;
+    height: 35px;
+    margin-top:15px;
+    border-radius: 7px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color:hsl(0, 0%, 100%);
+    font-family:Montserrat;
+    font-size: 13px;
+}
+
+@media only screen and (min-width:700px) {
+
+    .card{
+        flex-direction:row;
+        height:60vh;
+        width: 50%;
+        
+    }
+    .mobile-img{
+        display: none;
+    }
+    .desktop-img{
+        display:block;
+        object-fit: cover;
+        width : 100%;
+        height : 100%;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .img{
+        width: 50%;
+    
+    }
+.detail{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 49%;
+    border-radius: 0px 10px 10px 0px;
+    
+}
+.Perfume{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.Title{
+    margin: 0px;
+    padding-left: 10px;
+    font-size: 40px;
+    line-height: 40px;
+}
+ .passage{
+    padding-left: 10px;
+    font-size: 11.5px;
+ }
+ .price{
+    padding-left: 10px;
+ }
+ button{
+    margin-left: 10px;
+ }
+}
