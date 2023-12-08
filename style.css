@@ -4,58 +4,57 @@ body{
     background-color: hsl(30, 38%, 92%);
 }
 .container{
-    height:100%;
+    height: 100vh;
     display: flex;
-    align-items: center;
-    overflow: hidden;
     justify-content: center;
-   
+    align-items: center;
+
 }
 .card{
-    display: flex;
-    flex-direction: column;
-    height:99%;
-    width: 80%;
-    border-radius: 10px;
-    overflow: hidden;
-    
-
+    display:flex;
+   width: 45%;
+   height: 55%;
+   background-color: rgb(255, 255, 255);
+   border-radius:0px 10px 10px 0px;
 }
-.mobile-img {
-    width: 100%;
-    height:100%;
-    border-radius: 10px 10px 0px 0px;
+.img{
+width: 50%;
 }
 .desktop-img{
-    display: none;
-   
+    border-radius:10px 0px 0px 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-.detail{
-   
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 0px 0px 10px 10px;
-    padding: 22px;
-   
+.mobile-img{
+    display: none;
+}
+.texts{
+    width: 50%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    
 }
 .Perfume{
-    margin: 0px;
-    font-size:0.6rem;
-    letter-spacing: 4px;
+    
+    font-size:x-small;
+    letter-spacing: 5px;
     font-family:Montserrat;
     color: hsl(228, 12%, 48%);
 }
 .Title{
-    
+    width: 70%;
     font-family:Fraunces;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 32px;
     margin-top: 10px;
     margin-bottom: 12px;
 }
 .passage{
     font-family: Montserrat;
-    font-size:0.7em;
+    width: 80%;
+    font-size:0.8em;
     line-height: 18px;
     color: hsl(228, 12%, 48%); 
     margin-top: 0px;
@@ -63,7 +62,7 @@ body{
 .price{
     display: flex;
     align-items: center; 
-    gap:15px;   
+    gap:10px;   
 }
 .currentprice{
     display: inline;
@@ -78,13 +77,14 @@ body{
     font-size:x-small;
 }
 button{
+    
     display:flex;
     justify-content:center;
     align-items: center;
     gap: 10px;
     width:100%;
     height: 35px;
-    margin-top:15px;
+    margin-top:30px;
     border-radius: 7px;
     border: none;
     background-color: hsl(158, 36%, 37%);
@@ -93,54 +93,55 @@ button{
     font-size: 13px;
 }
 
-@media only screen and (min-width:700px) {
+@media only screen and (max-width:376px) {
 
-    .card{
-        flex-direction:row;
-        height:60vh;
-        width: 50%;
-        
+    .container{
+        align-items: start;
+        margin: 10px;
     }
-    .mobile-img{
-        display: none;
-    }
-    .desktop-img{
-        display:block;
-        object-fit: cover;
-        width : 100%;
-        height : 100%;
-        border-radius: 10px 0px 0px 10px;
-    }
-    .img{
-        width: 50%;
-    
-    }
-.detail{
-    display:flex;
+   .card{
     flex-direction: column;
-    justify-content:space-between;
-    width: 49%;
-    border-radius: 0px 10px 10px 0px;
+    width: 80%;
+    border-radius:10px 10px 0px 0px ;
     
-}
-.Perfume{
-    padding-top: 10px;
-    padding-left: 10px;
-}
-.Title{
-    margin: 0px;
-    padding-left: 10px;
-    font-size: 40px;
-    line-height: 40px;
-}
- .passage{
-    padding-left: 10px;
-    font-size: 11.5px;
- }
- .price{
-    padding-left: 10px;
- }
- button{
-    margin-left: 10px;
- }
+   }
+   .img{
+    width: 100%;
+    height:52%;
+    
+   }
+   .desktop-img{
+      display: none;
+   }
+   .mobile-img{
+       display: block;
+       width: 100%;
+       object-fit: cover;
+       border-radius:10px 10px 0px 0px ;
+   }
+   .texts{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 86%;
+    padding-bottom:18px ;
+     border-radius: 0px 0px 10px 10px;
+   }
+   .Perfume{
+    width: 100px;
+    margin-top: 0%;
+   }
+   .Title{
+    width: 90%;
+    font-size:1.7rem;
+    margin-top: 0px;
+   }
+   .passage{
+    width: 100%;
+   }
+   button{
+    margin-top: 10px;
+   }
+   
+   
 }
