@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Fraunces-var;
+    src: url('../assets/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf');
+    font-display: swap;
+ }
+ 
+ @font-face {
+    font-family: Montserrat-var;
+    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf');
+    font-display: swap;
+ }
+ 
+ :root {
+    --font-fraunces-var: 'Fraunces-var';
+    --font-montserrat-var: 'Montserrat-var';
+ }

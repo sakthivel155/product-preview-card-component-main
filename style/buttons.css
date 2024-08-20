@@ -1,0 +1,27 @@
+.default-btn {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+ 
+ }
+ 
+ .cart-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+ 
+    color: var(--c-White);
+    width: 100%;
+    padding-block: .7em;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    background-color: var(--c-Dark-cyan);
+    transition: all .3s;
+ }
+ 
+ .cart-btn:active {
+    background-color: hsl(157, 34%, 23%);
+    transition: all .3s;
+ }
