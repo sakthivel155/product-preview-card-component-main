@@ -20,8 +20,8 @@ This HTML & CSS-only challenge will be perfect for anyone starting to build resp
  
 ### Links
 
-- Solution URL: [Repo](https://github.com/sakthivel155/blog-preview-card-main)
-- Live Site URL: [Live Demo](https://sakthivel155.github.io/blog-preview-card-main/)
+- Solution URL: [Repo](https://github.com/sakthivel155/product-preview-card-component-main)
+- Live Site URL: [Live Demo](https://sakthivel155.github.io/product-preview-card-component-main/)
 
 ## My process
 
